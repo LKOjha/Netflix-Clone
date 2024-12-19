@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Design</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.cards-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background: linear-gradient(145deg, #1a1a1a, #2b2b2b);
+    border-radius: 15px;
+    width: 250px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.card img {
+    width: 50px;
+    height: 50px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="cards-container">
+        <div class="card">
+            <h2>Enjoy on your TV</h2>
+            <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+            <img src="tv-icon.png" alt="TV Icon">
+        </div>
+        <div class="card">
+            <h2>Download your shows to watch offline</h2>
+            <p>Save your favourites easily and always have something to watch.</p>
+            <img src="download-icon.png" alt="Download Icon">
+        </div>
+        <div class="card">
+            <h2>Watch everywhere</h2>
+            <p>Stream unlimited movies and TV shows on your phone, tablet, laptop and TV.</p>
+            <img src="watch-icon.png" alt="Watch Icon">
+        </div>
+        <div class="card">
+            <h2>Create profiles for kids</h2>
+            <p>Send kids on adventures with their favourite characters in a space made just for them — free with your membership.</p>
+            <img src="kids-icon.png" alt="Kids Profile Icon">
+        </div>
+    </div>
+</body>
+</html>

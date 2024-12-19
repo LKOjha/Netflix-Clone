@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    /* font-weight: 900; */
+}
+body{
+    background-color: black;
+}
+.main{
+    background: url(img/bg_Image.jpg) no-repeat;
+    background-position: center center;
+    /* background-size: max(1200px, 100vw); */
+    /* height:100vh; */
+    height:100vmin;
+    /* height:140vmin; */
+    background-size: cover;
+    /* width: 100%; */
+    position: relative;
+    /* border: 2px solid #ff0000; */
+    /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+    box-shadow: inset 18px 20px 156px black;
+}
+
+.main .back{
+    background-color: black;
+    opacity: 0.7;
+    height: 100vh;
+    /* height: 140vh; */
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 80vw;
+    margin: auto;
+    align-items: center;
+}
+.net_logo{
+    position: relative;
+    z-index: 10;
+}
+.net_logo img{
+    width: 150px;
+}
+nav .button{
+    position: relative;
+    z-index: 10;
+    display: flex; 
+}
+
+nav .button button{
+    margin: 10px;
+}
+.mar{
+    position: relative;
+    top:20px ;
+}
+.sign-in-btn {
+    background-color: #ff0000; 
+    color: rgb(255, 255, 255); 
+    /* padding: 8px 18px;  */
+    text-align: center;
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 14px; 
+    border-radius: 5px;
+    border: none; 
+    cursor: pointer; 
+    width: 80px;
+}
+
+.lang{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(225, 216, 216, 0.894) ;
+    border-radius: 7px;
+    padding: 8px 28px;
+    background-color: rgba(0, 0, 0, 0.188);
+    color: white;
+    cursor: pointer;
+    font-weight: 750;
+    font-size: 1.1rem;
+}
+
+.lang div img{
+    margin-right: 5px;
+}
+
+.language-select {
+    font-size: 16px;
+    /* padding: 5px; */
+    background-color: #00000000;
+    border: none;
+    color: white;
+    width: 90px;
+    height: 30px;
+}
+
+.language-select option{
+    background: none;
+    background-color: rgba(0, 0, 0, 0.944);
+}
+

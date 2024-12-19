@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Slider</title>
+  <link rel="stylesheet" href="test_style.css">
+</head>
+<body>
+  <section class="trending-now">
+    <h2>Trending Now</h2>
+    <div class="slider">
+        
+        <div class="card-container">
+
+        <div class="card">
+          <img src="img/maharaja_img.jpg" alt="Movie 1">
+          <div class="card-info">
+            <h3>#1</h3>
+            <p>Recently Added</p>
+          </div>
+        </div>
+        <div class="card">
+            <img src="img/kalki_img.jpg" alt="Movie 2">
+          <div class="card-info">
+            <h3>#2</h3>
+            <p>Recently Added</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/kalki_img.jpg" alt="Movie 2">
+          <div class="card-info">
+              <h3>#2</h3>
+              <p>Recently Added</p>
+          </div>
+        </div>
+        <div class="card">
+            <img src="img/kalki_img.jpg" alt="Movie 2">
+            <div class="card-info">
+            <h3>#2</h3>
+            <p>Recently Added</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/kalki_img.jpg" alt="Movie 2">
+          <div class="card-info">
+              <h3>#2</h3>
+            <p>Recently Added</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/kalki_img.jpg" alt="Movie 2">
+          <div class="card-info">
+              <h3>#2</h3>
+              <p>Recently Added</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/kalki_img.jpg" alt="Movie 2">
+          <div class="card-info">
+              <h3>#2</h3>
+              <p>Recently Added</p>
+            </div>
+        </div>
+        <div class="card">
+          <img src="img/kalki_img.jpg" alt="Movie 2">
+          <div class="card-info">
+            <h3>#2</h3>
+            <p>Recently Added</p>
+          </div>
+        </div>
+    </div>
+        <button class="prev" onclick="scrollLeft()">&#10094;</button>
+        <button class="next" onclick="scrollRight()">&#10095;</button>
+    </div>
+  </section>
+
+  <script >
+const container = document.querySelector('.card-container');
+
+function scrollRight() {
+  container.scrollBy({
+    top: 0,
+    // left: 220, 
+    left: 520,
+    behavior: 'smooth'
+  });
+}
+
+function scrollLeft() {
+  container.scrollBy({
+    top: 0,
+    // left: -220, 
+    left: -120,
+    behavior: 'smooth'
+  });
+}
+
+  </script>
+</body>
+</html>
